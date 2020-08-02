@@ -7,4 +7,3 @@ class BikesController < ApplicationController
         @bike = Bike.find_by(params[:id])
     end
 end
-gst

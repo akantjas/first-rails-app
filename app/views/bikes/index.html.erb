@@ -3,8 +3,8 @@
 <% @bikes.each do |bike| %>
     <div class="card"> 
         <h2> <%= bike.name %> </h2>
-        <p> <%= bike.price %> </p>
-        <p> <%= bike.rating %> </p>
-        <p> <%= bike.vendor %> </p>
+        <p> Price: <%= bike.price %> </p>
+        <p> Rating: <%= bike.rating %> </p>
+        <p> Vendor: <%= bike.vendor %> </p>
     </div>
 <% end %>
