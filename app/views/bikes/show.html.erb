@@ -2,3 +2,7 @@
 <p> Price: <%= @bike.price %> Euros</p>
 <p> Rating: <%= @bike.rating %> /5 </p>
 <p> Vendor: <%= @bike.vendor %> </p>
+
+<%= link_to  "Edit", edit_bike_path(@bike) %>
+<%= link_to "Delete ", bike_path(@bike), method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to  "Back", bikes_path %>

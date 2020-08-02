@@ -1,10 +1,14 @@
 <h1> All bikes</h1> 
 
+<%= link_to  "Create new bike", new_bike_path %>
+
 <% @bikes.each do |bike| %>
-    <div class="card"> 
-        <h2> <%= bike.name %> </h2>
-        <p> Price: <%= bike.price %> </p>
-        <p> Rating: <%= bike.rating %> </p>
-        <p> Vendor: <%= bike.vendor %> </p>
-    </div>
+    <%= link_to bike_path(bike) do %>
+        <div class="card"> 
+            <h2> <%= bike.name %> </h2>
+            <p> Price: <%= bike.price %> </p>
+            <p> Rating: <%= bike.rating %> </p>
+            <p> Vendor: <%= bike.vendor %> </p>
+        </div>
+    <% end %>
 <% end %>
