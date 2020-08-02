@@ -1,8 +1,10 @@
 <h1> All bikes</h1> 
 
 <% @bikes.each do |bike| %>
-    <h2> <%= bike.name %> </h2>
-    <p> <%= bike.price %> </p>
-    <p> <%= bike.rating %> </p>
-    <p> <%= bike.vendor %> </p>
+    <div class="card"> 
+        <h2> <%= bike.name %> </h2>
+        <p> <%= bike.price %> </p>
+        <p> <%= bike.rating %> </p>
+        <p> <%= bike.vendor %> </p>
+    </div>
 <% end %>
