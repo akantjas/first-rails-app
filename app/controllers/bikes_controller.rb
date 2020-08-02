@@ -1,5 +1,9 @@
 class BikesController < ApplicationController
-    def about
-        @members = ['Alex', 'Kim', 'Vlad']
+    def index
+        @bikes = Bike.all
+    end
+
+    def show
+        @bike = Bike.find_by(params[:id])
     end
 end
