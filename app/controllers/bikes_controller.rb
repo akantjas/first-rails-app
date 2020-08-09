@@ -5,6 +5,10 @@ class BikesController < ApplicationController
         @bikes = Bike.all
     end
 
+    def compare
+        @bikes = Bike.where(rating: 5)
+    end 
+
     def show
     end
 
